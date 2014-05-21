@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>Gnu Plotting Test Interface</comment>  
+	<entry key="swc.iplot.xml.path.win">conf/gnuplot/i.gnuplot.win.xml</entry>  
+	<entry key="TemplateLoc">conf/templates</entry>  
+	<entry key="DataName">PTPlot.DAT</entry> 
+	<entry key="TemplateName">PTPlot_Win2.xml</entry> 
+	<entry key="iplot.lineplot.path.win">D:/MyProject/SpaceElectricWave/DEV/plot/latest/bin/output/</entry> 
+	<entry key="iplot.input.path.win">D:/MyProject/SpaceElectricWave/DEV/plot/latest/bin/data/</entry> 
+</properties>  

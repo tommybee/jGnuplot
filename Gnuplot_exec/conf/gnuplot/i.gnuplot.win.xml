@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>Gnu Plotting Library Interface</comment>  
+	<entry key="NativePath">D:/MyProject/SpaceElectricWave/DEV/plot/latest/bin</entry>
+	<entry key="NativeLib">i_gnuplot</entry>
+	<!-- for testing -->  
+	<entry key="PlotLoc">D:/MyProject/SpaceElectricWave/DEV/plot/gnuplot/bin/gnuplot</entry>  
+	<entry key="doc.encoding">EUC-KR</entry>
+	<entry key="src.encoding">EUC-KR</entry>
+	<entry key="dest.encoding">KSC5601</entry>
+	<entry key="RC_NAME">ICDAzLDNwLogxde9usautNk=</entry>
+	
+	<entry key="FONT_TITLE.linux">/home/swc_plot/plottest/bin/fonts/alxb__ub.ttf,16</entry>
+	<entry key="FONT_N_12.linux">/home/swc_plot/plottest/bin/fonts/alr___ub.ttf,12</entry>
+	<entry key="FONT_N_10.linux">/home/swc_plot/plottest/bin/fonts/alr___ub.ttf,10</entry>
+	<entry key="FONT_N_08.linux">/home/swc_plot/plottest/bin/fonts/alr___ub.ttf,8</entry>
+	<entry key="FONT_N_06.linux">/home/swc_plot/plottest/bin/fonts/alr___ub.ttf,6</entry>
+	<entry key="FONT_N_00.linux">/home/swc_plot/plottest/bin/fonts/alr___ub.ttf,0</entry>
+	<entry key="FONT_B_12.linux">/home/swc_plot/plottest/bin/fonts/alxb__ub.ttf,12</entry>
+	<entry key="FONT_B_10.linux">/home/swc_plot/plottest/bin/fonts/alxb__ub.ttf,10</entry>
+	<entry key="FONT_B_08.linux">/home/swc_plot/plottest/bin/fonts/alxb__ub.ttf,8</entry>
+	<entry key="FONT_B_06.linux">/home/swc_plot/plottest/bin/fonts/alxb__ub.ttf,6</entry>
+	<entry key="FONT_RC.linux">/home/swc_plot/plottest/bin/fonts/HMBC.TTF,12</entry>
+	
+	<entry key="FONT_TITLE.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alxb__ub.ttf,16</entry>
+	<entry key="FONT_N_12.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alr___ub.ttf,12</entry>
+	<entry key="FONT_N_10.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alr___ub.ttf,10</entry>
+	<entry key="FONT_N_08.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alr___ub.ttf,8</entry>
+	<entry key="FONT_N_06.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alr___ub.ttf,6</entry>
+	<entry key="FONT_N_00.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alr___ub.ttf,0</entry>
+	<entry key="FONT_B_12.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alxb__ub.ttf,12</entry>
+	<entry key="FONT_B_10.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alxb__ub.ttf,10</entry>
+	<entry key="FONT_B_08.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alxb__ub.ttf,8</entry>
+	<entry key="FONT_B_06.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/alxb__ub.ttf,6</entry>
+	<entry key="FONT_RC.win">D:/MyProject/SpaceElectricWave/DEV/plot/jGnuPlot/bin/fonts/HMBC.TTF,12</entry>
+</properties>  

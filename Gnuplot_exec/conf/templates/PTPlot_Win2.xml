@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jplot>
+	<plotcmd>
+		<!-- #++++++++++++++++++++++++++++++++++++++++++++++++# -->
+		<!-- #                                                # -->
+		<!-- #     Plot Name : MY PLOT                        # -->
+		<!-- #        Author : frog                           # -->
+		<!-- #          Date : 2011-09-23                     # -->
+		<!-- # Color Version : White                          # -->
+		<!-- #                                                # -->
+		<!-- #++++++++++++++++++++++++++++++++++++++++++++++++# -->
+		<!-- #                                                # -->
+		<!-- #       Version : Windows                        # -->
+		<!-- # File Encoding : UTF8                           # -->
+		<!-- #                                                # -->
+		<!-- #++++++++++++++++++++++++++++++++++++++++++++++++# -->
+
+		<command>reset</command>
+		<!-- # User Input paramater -->
+		<declare name="OUTPUT_FILE_NAME"></declare>
+
+		<!-- Input File Name -->
+		<declare name="VAR" no="0"></declare>
+
+		<!-- Updated Date, Time  -->
+		<declare name="VAR" no="1"></declare>
+
+		<declare name="XRANGE_START"></declare>
+		<declare name="XRANGE_END"></declare>
+
+		<!-- # System Variable -->
+		<declare name="YRANGE_START">0</declare>
+		<declare name="YRANGE_END">200</declare>
+		<declare name="YTICS_TERM">50</declare>
+
+		<declare name="TITLE_STRING">"Big Title"</declare>
+		<declare name="XLABEL_STRING">"Universal Time"</declare>
+		<declare name="YLABEL_STRING">"MyLabel (cm)"</declare>
+		<declare name="RC_NAME">$1</declare>
+
+		<declare name="BACKGROUND_COLOR">"#ffffff"</declare>
+		<declare name="FORE_COLOR">"#000000"</declare>
+		<declare name="MAJOR_GRID_COLOR">"#000000"</declare>
+		<declare name="MINOR_GRID_COLOR">"#e0e0e0"</declare>
+
+		<declare name="P1_COLOR">"#ff0000"</declare>
+		<declare name="P2_COLOR">"#0000ff"</declare>
+
+		<declare name="FONT_TITLE">$2</declare>
+		<declare name="FONT_N_12">$2</declare>
+		<declare name="FONT_N_10">$2</declare>
+		<declare name="FONT_N_08">$2</declare>
+		<declare name="FONT_B_12">$2</declare>
+		<declare name="FONT_B_10">$2</declare>
+		<declare name="FONT_B_08">$2</declare>
+		<declare name="FONT_RC">$2</declare>
+
+		<!-- # General Setting -->
+		<set option="terminal">png size 640, 480 background "#ffffff"</set>
+		<set option="output">OUTPUT_FILE_NAME</set>
+		<set option="tmargin">0</set>
+		<set option="rmargin">0</set>
+		<set option="lmargin">0</set>
+		<set option="bmargin">0</set>
+
+		<set option="origin">0.15, 0.15</set>
+		<set option="size">0.75, 0.75</set>
+
+		<!-- # Set Time-Format -->
+		<set option="xdata">time</set>
+		<set option="timefmt">"%Y-%m-%d %H:%M:%S"</set>
+
+		<!-- # Title Setting -->
+		<set option="title">TITLE_STRING font FONT_TITLE tc rgb FORE_COLOR enhanced</set>
+
+		<!-- # X-Axis Setting -->
+		<set option="xrange">[ XRANGE_START : XRANGE_END ]</set>
+		<set option="xlabel">XLABEL_STRING font FONT_B_12 tc rgb FORE_COLOR</set>
+		<set option="xtics">86400 format "%b %d" font FONT_N_12</set>
+
+		<!-- # Y-Axis Setting -->
+		<set option="termoption">enhanced</set>
+
+		<set option="ylabel">YLABEL_STRING font FONT_B_12 tc rgb FORE_COLOR</set>
+		<set option="yrange">[ YRANGE_START : YRANGE_END ]</set>
+		<set option="ytics">YRANGE_START, YTICS_TERM, YRANGE_END font FONT_N_12 tc rgb FORE_COLOR</set>
+		<set option="mytics">10</set>
+
+		<set option="y2range">[ YRANGE_START : YRANGE_END ]</set>
+
+		<!-- # Footer -->
+		<set option="label">RC_NAME at screen 0.01, 0.015 font FONT_RC textcolor rgb FORE_COLOR</set>
+		<set option="label">VAR1 at screen 0.70, 0.015 font FONT_B_08 textcolor rgb FORE_COLOR</set>
+
+		<!-- # Border & Grid line setting -->
+		<set option="border">lc rgb FORE_COLOR</set>
+		<set option="style">line 98 lw 1 lt 0 lc rgb MINOR_GRID_COLOR</set>
+		<set option="style">line 99 lw 1 lt 1 lc rgb MAJOR_GRID_COLOR</set>
+		<!-- #set grid back xtics mytics ytics  ls 99, ls 98 -->
+
+		<set option="key">off</set>
+		<set option="label">"LLeft Label"  at graph 1.08, 0.25 rotate by 90 font FONT_B_12 textcolor rgb P1_COLOR</set>
+		<set option="label">"Left Label" at graph 1.04, 0.25 rotate by 90 font FONT_B_12 textcolor rgb P2_COLOR</set>
+
+		<!-- # Border & Grid line setting -->
+		<set option="border">lc rgb FORE_COLOR</set>
+		<set option="style">line 99 lw 1 lt 0 lc rgb MAJOR_GRID_COLOR</set>
+		<set option="grid">back xtics ytics ls 99</set>
+
+		<!-- # Graph Background setting -->
+		<declare name="div">0.25</declare>
+		<set option="obj">rect from graph 0, graph 0 to graph 1, graph 1 fs solid noborder 0.08 fc rgb "#000000" behind</set>
+		<set option="obj">rect from graph 0, graph (div)*3 to graph 1, graph (div)*4 fs solid noborder 0.08 fc rgb "#000000" behind</set>
+		<set option="obj">rect from graph 0, graph (div)*2 to graph 1, graph (div)*3 fs solid noborder 0.04 fc rgb "#000000" behind</set>
+		<set option="obj">rect from graph 0, graph (div)*1 to graph 1, graph (div)*2 fs solid noborder 0.08 fc rgb "#000000" behind</set>
+		<set option="obj">rect from graph 0, graph (div)*0 to graph 1, graph (div)*1 fs solid noborder 0.04 fc rgb "#000000" behind</set>
+
+		<!-- # Plot -->
+		<plot>VAR0 using 1:3 title "0.8"  with lines lw 1.7 lt rgb P1_COLOR, VAR0 using 1:4 title "2.0"  with lines lw 1.7 lt rgb P2_COLOR</plot>
+
+		<set option="output"></set>
+
+	</plotcmd>
+</jplot>

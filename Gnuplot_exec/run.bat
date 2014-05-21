@@ -1,0 +1,3 @@
+call setenv.bat
+java -cp . LauncherBootstrap -verbose -executablename i_gnuplot i_gnuplot 
+pause ...
